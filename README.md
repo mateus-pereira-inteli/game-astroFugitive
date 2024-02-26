@@ -3,9 +3,11 @@
 Neste jogo você é um astronauta que precisa coletar todas as estrelas do mapa para conseguir despistar um alien que te persegue a todo momento, caso você seja capturado pelo alien o jogo acaba.
 
 ### Controles
-tecla up: pular
-tecla left: andar para a direita
-tecla right: andar para a esquerda
+tecla up: pular;
+
+tecla left: andar para a direita;
+
+tecla right: andar para a esquerda;
 
 Autor: Mateus Beppler Pereira
 
