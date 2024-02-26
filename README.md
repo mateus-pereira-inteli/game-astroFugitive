@@ -9,6 +9,5 @@ tecla left: andar para a direita;
 
 tecla right: andar para a esquerda;
 
-Autor: Mateus Beppler Pereira
-
-Data: 26/02/2024
+## Autor: Mateus Beppler Pereira
+## Data: 26/02/2024
