@@ -8,10 +8,10 @@ class Welcome extends Phaser.Scene {
 
     preload() {
         //Carregar componentes
-        this.load.image("bg", "assets/space_bg.jpg");
-        this.load.html("title", "components/title.html");
-        this.load.html("buttons", "components/initial_buttons.html");
-        this.load.html("guia", "components/guia.html");
+        this.load.image("bg", "https://mateus-pereira-inteli.github.io/game-astrofugitive/assets/space_bg.jpg");
+        this.load.html("title", "https://mateus-pereira-inteli.github.io/game-astrofugitive/components/title.html");
+        this.load.html("buttons", "https://mateus-pereira-inteli.github.io/game-astrofugitive/components/initial_buttons.html");
+        this.load.html("guia", "https://mateus-pereira-inteli.github.io/game-astrofugitive/components/guia.html");
     }
 
     create() {

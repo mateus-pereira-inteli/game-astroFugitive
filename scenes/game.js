@@ -7,12 +7,12 @@ class Game extends Phaser.Scene {
 
     preload() {
         //Carregar componentes
-        this.load.image("plataform", "../assets/plataforma2.png")
-        this.load.spritesheet('astronauta', '../assets/astronauta-spritesheet.png', { frameWidth: 55, frameHeight: 81 });
-        this.load.spritesheet('alien', '../assets/alien-spritesheet.png', { frameWidth: 55, frameHeight: 81 });
-        this.load.html('gameOver', '../components/gameOver.html');
-        this.load.html('gameEnd', '../components/gameEnd.html');
-        this.load.image("star", "../assets/star.png")
+        this.load.image("plataform", "https://mateus-pereira-inteli.github.io/game-astrofugitive/assets/plataforma2.png")
+        this.load.spritesheet('astronauta', 'https://mateus-pereira-inteli.github.io/game-astrofugitive/assets/astronauta-spritesheet.png', { frameWidth: 55, frameHeight: 81 });
+        this.load.spritesheet('alien', 'https://mateus-pereira-inteli.github.io/game-astrofugitive/assets/alien-spritesheet.png', { frameWidth: 55, frameHeight: 81 });
+        this.load.html('gameOver', 'https://mateus-pereira-inteli.github.io/game-astrofugitive/components/gameOver.html');
+        this.load.html('gameEnd', 'https://mateus-pereira-inteli.github.io/game-astrofugitive/components/gameEnd.html');
+        this.load.image("star", "https://mateus-pereira-inteli.github.io/game-astrofugitive/assets/star.png")
     }
 
     create() {
