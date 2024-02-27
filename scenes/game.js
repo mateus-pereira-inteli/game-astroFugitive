@@ -153,7 +153,7 @@ class Game extends Phaser.Scene {
         }
     }
 
-    gameOver() {
+    gameOver() { //função de condição de derrota do game
         this.gameStatus = false;
         this.player.destroy()
 
@@ -163,19 +163,19 @@ class Game extends Phaser.Scene {
         this.add.dom(innerWidth / 2, innerHeight / 2).createFromCache('gameOver');
         document.getElementById("countStars").innerHTML = this.score; //atualiza o placar da tela de game over
 
-        var replayGame = document.getElementById("replayGame");
+        var replayGame = document.getElementById("replayGame"); //Botão para replay
         replayGame.addEventListener("click", (event) => {
             this.replayGame();
         });
 
-        var returnMenu = document.getElementById("returnMenu");
+        var returnMenu = document.getElementById("returnMenu"); // Botão para voltar ao menu
         returnMenu.addEventListener("click", (event) => {
             this.returnMenu();
         });
     }
 
     replayGame() {
-        this.cameras.main.fadeOut(400, 0, 0, 0);
+        this.cameras.main.fadeOut(400, 0, 0, 0); //Transição Fade out e Fade in ao reniciar a cena
         this.cameras.main.on('camerafadeoutcomplete', function(camera, effect) {
             this.scene.restart();
             this.cameras.main.fadeIn(1000, 0, 0, 0);
@@ -183,7 +183,7 @@ class Game extends Phaser.Scene {
     }
 
     returnMenu() {
-        this.cameras.main.fadeOut(400, 0, 0, 0);
+        this.cameras.main.fadeOut(400, 0, 0, 0); //Transição Fade out e Fade in entre as cenas
         this.cameras.main.on('camerafadeoutcomplete', function(camera, effect) {
             this.scene.start('Welcome');
             this.cameras.main.fadeIn(1000, 0, 0, 0);
@@ -213,7 +213,7 @@ class Game extends Phaser.Scene {
         }
     }
 
-    gameEnd() {
+    gameEnd() { // função para condição de vitória do game
         this.gameStatus = false;
         this.enemy.destroy()
 
@@ -222,12 +222,12 @@ class Game extends Phaser.Scene {
 
         this.add.dom(innerWidth / 2, innerHeight / 2).createFromCache('gameEnd');
 
-        var replayGame = document.getElementById("replayGame");
+        var replayGame = document.getElementById("replayGame"); // Botão para replay
         replayGame.addEventListener("click", (event) => {
             this.replayGame();
         });
 
-        var returnMenu = document.getElementById("returnMenu");
+        var returnMenu = document.getElementById("returnMenu"); // Botão para voltar ao menu
         returnMenu.addEventListener("click", (event) => {
             this.returnMenu();
         });
